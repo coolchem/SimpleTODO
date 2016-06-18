@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */; };
+		31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */; };
+		B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */; };
+		B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F91D15B4A00097C1C2 /* EmailViewController.m */; };
+		B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */; };
 		B0E369D21D15A9D700AD96F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D11D15A9D700AD96F6 /* main.m */; };
 		B0E369D51D15A9D700AD96F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D41D15A9D700AD96F6 /* AppDelegate.m */; };
 		B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D71D15A9D700AD96F6 /* ViewController.m */; };
@@ -16,6 +21,8 @@
 		B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */; };
 		B0E369EE1D15A9D700AD96F6 /* SimpleTODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369ED1D15A9D700AD96F6 /* SimpleTODOTests.m */; };
 		B0E369F91D15A9D700AD96F6 /* SimpleTODOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369F81D15A9D700AD96F6 /* SimpleTODOUITests.m */; };
+		B0E36A071D15ACB300AD96F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */; };
+		D55914AC5A010E4FCCC310FC /* libPods-SimpleTODOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTokenViewController.h; sourceTree = "<group>"; };
+		B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTokenViewController.m; sourceTree = "<group>"; };
+		B07A76F81D15B4A00097C1C2 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		B07A76F91D15B4A00097C1C2 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
+		B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
 		B0E369CD1D15A9D700AD96F6 /* SimpleTODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E369D11D15A9D700AD96F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0E369D31D15A9D700AD96F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +69,13 @@
 		B0E369F41D15A9D700AD96F6 /* SimpleTODOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E369F81D15A9D700AD96F6 /* SimpleTODOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTODOUITests.m; sourceTree = "<group>"; };
 		B0E369FA1D15A9D700AD96F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1043B0B1401CE644AED2C02 /* Pods-SimpleTODOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C42B6AD48F6E6327266D7199 /* Pods-SimpleTODOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8B00E75B2D660BA7F79C4EA /* Pods-SimpleTODO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODO.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODO/Pods-SimpleTODO.release.xcconfig"; sourceTree = "<group>"; };
+		F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F957C2A38493F0F8250A5A72 /* Pods-SimpleTODO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODO/Pods-SimpleTODO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55914AC5A010E4FCCC310FC /* libPods-SimpleTODOTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +99,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6642326E6DBB8EF594894E79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */,
+				B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */,
+				F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C45BEF034ECEE48DCA5F321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F957C2A38493F0F8250A5A72 /* Pods-SimpleTODO.debug.xcconfig */,
+				D8B00E75B2D660BA7F79C4EA /* Pods-SimpleTODO.release.xcconfig */,
+				C1043B0B1401CE644AED2C02 /* Pods-SimpleTODOTests.debug.xcconfig */,
+				563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */,
+				C42B6AD48F6E6327266D7199 /* Pods-SimpleTODOUITests.debug.xcconfig */,
+				8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0E369C41D15A9D700AD96F6 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +136,8 @@
 				B0E369EC1D15A9D700AD96F6 /* SimpleTODOTests */,
 				B0E369F71D15A9D700AD96F6 /* SimpleTODOUITests */,
 				B0E369CE1D15A9D700AD96F6 /* Products */,
+				6C45BEF034ECEE48DCA5F321 /* Pods */,
+				6642326E6DBB8EF594894E79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,14 +154,16 @@
 		B0E369CF1D15A9D700AD96F6 /* SimpleTODO */ = {
 			isa = PBXGroup;
 			children = (
+				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
+				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
+				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
+				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
+				B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */,
 				B0E369D31D15A9D700AD96F6 /* AppDelegate.h */,
 				B0E369D41D15A9D700AD96F6 /* AppDelegate.m */,
 				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
 				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
-				B0E369D91D15A9D700AD96F6 /* Main.storyboard */,
 				B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */,
-				B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */,
-				B0E369E41D15A9D700AD96F6 /* Info.plist */,
 				B0E369DC1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld */,
 				B0E369D01D15A9D700AD96F6 /* Supporting Files */,
 			);
@@ -120,6 +173,11 @@
 		B0E369D01D15A9D700AD96F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
+				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
+				B0E369E41D15A9D700AD96F6 /* Info.plist */,
+				B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */,
+				B0E369D91D15A9D700AD96F6 /* Main.storyboard */,
 				B0E369D11D15A9D700AD96F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0E369FD1D15A9D700AD96F6 /* Build configuration list for PBXNativeTarget "SimpleTODO" */;
 			buildPhases = (
+				275491EAC5B520B367C4F9F1 /* [CP] Check Pods Manifest.lock */,
 				B0E369C91D15A9D700AD96F6 /* Sources */,
 				B0E369CA1D15A9D700AD96F6 /* Frameworks */,
 				B0E369CB1D15A9D700AD96F6 /* Resources */,
+				2453807C0F6AAAFC3C4A1079 /* [CP] Embed Pods Frameworks */,
+				30E8174EF0AE1F2B5467DC62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0E36A001D15A9D700AD96F6 /* Build configuration list for PBXNativeTarget "SimpleTODOTests" */;
 			buildPhases = (
+				D8E2A907CF5D348E97647406 /* [CP] Check Pods Manifest.lock */,
 				B0E369E51D15A9D700AD96F6 /* Sources */,
 				B0E369E61D15A9D700AD96F6 /* Frameworks */,
 				B0E369E71D15A9D700AD96F6 /* Resources */,
+				95A92A551095C5F023F2FC96 /* [CP] Embed Pods Frameworks */,
+				C83FF9DF15D883BFFB41045B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0E36A031D15A9D700AD96F6 /* Build configuration list for PBXNativeTarget "SimpleTODOUITests" */;
 			buildPhases = (
+				7B45B59F338A3B17891125E1 /* [CP] Check Pods Manifest.lock */,
 				B0E369F01D15A9D700AD96F6 /* Sources */,
 				B0E369F11D15A9D700AD96F6 /* Frameworks */,
 				B0E369F21D15A9D700AD96F6 /* Resources */,
+				3FA911D86DC60D1A76E6D47A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */,
+				B0E36A071D15ACB300AD96F6 /* GoogleService-Info.plist in Resources */,
 				B0E369E01D15A9D700AD96F6 /* Assets.xcassets in Resources */,
 				B0E369DB1D15A9D700AD96F6 /* Main.storyboard in Resources */,
 			);
@@ -268,13 +335,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2453807C0F6AAAFC3C4A1079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTODO/Pods-SimpleTODO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		275491EAC5B520B367C4F9F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30E8174EF0AE1F2B5467DC62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTODO/Pods-SimpleTODO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA911D86DC60D1A76E6D47A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B45B59F338A3B17891125E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95A92A551095C5F023F2FC96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83FF9DF15D883BFFB41045B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E2A907CF5D348E97647406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0E369C91D15A9D700AD96F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */,
+				B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */,
 				B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */,
 				B0E369D51D15A9D700AD96F6 /* AppDelegate.m in Sources */,
+				B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */,
 				B0E369D21D15A9D700AD96F6 /* main.m in Sources */,
 				B0E369DE1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld in Sources */,
 			);
@@ -417,6 +610,7 @@
 		};
 		B0E369FE1D15A9D700AD96F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F957C2A38493F0F8250A5A72 /* Pods-SimpleTODO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
@@ -428,6 +622,7 @@
 		};
 		B0E369FF1D15A9D700AD96F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B00E75B2D660BA7F79C4EA /* Pods-SimpleTODO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
@@ -439,6 +634,7 @@
 		};
 		B0E36A011D15A9D700AD96F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1043B0B1401CE644AED2C02 /* Pods-SimpleTODOTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SimpleTODOTests/Info.plist;
@@ -451,6 +647,7 @@
 		};
 		B0E36A021D15A9D700AD96F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SimpleTODOTests/Info.plist;
@@ -463,6 +660,7 @@
 		};
 		B0E36A041D15A9D700AD96F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42B6AD48F6E6327266D7199 /* Pods-SimpleTODOUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SimpleTODOUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -474,6 +672,7 @@
 		};
 		B0E36A051D15A9D700AD96F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SimpleTODOUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,6 +701,7 @@
 				B0E369FF1D15A9D700AD96F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0E36A001D15A9D700AD96F6 /* Build configuration list for PBXNativeTarget "SimpleTODOTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +710,7 @@
 				B0E36A021D15A9D700AD96F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0E36A031D15A9D700AD96F6 /* Build configuration list for PBXNativeTarget "SimpleTODOUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +719,7 @@
 				B0E36A051D15A9D700AD96F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

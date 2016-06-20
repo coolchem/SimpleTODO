@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *todoText;
+@property (weak, nonatomic) IBOutlet UITableView *todoTableView;
+@property (weak, nonatomic) IBOutlet UIButton *todoButton;
+@property (weak, nonatomic) IBOutlet UIView *tableViewView;
 
 @end
 

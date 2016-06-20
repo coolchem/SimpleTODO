@@ -29,6 +29,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
   [self.view endEditing:YES];
 }
+- (IBAction)loginClicked:(id)sender {
+    
+}
 
 - (IBAction)didTapEmailLogin:(id)sender {
   [self showSpinner:^{
@@ -53,6 +56,7 @@
 /** @fn requestPasswordReset
  @brief Requests a "password reset" email be sent.
  */
+
 - (IBAction)didRequestPasswordReset:(id)sender {
   [self
       showTextInputPromptWithMessage:@"Email:"

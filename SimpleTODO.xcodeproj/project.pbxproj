@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */; };
 		31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */; };
+		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
+		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
 		B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */; };
 		B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F91D15B4A00097C1C2 /* EmailViewController.m */; };
 		B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */; };
@@ -46,6 +48,10 @@
 		046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2EAEE821D187389009ED2C5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUPViewController.h; sourceTree = "<group>"; };
+		A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUPViewController.m; sourceTree = "<group>"; };
 		B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTokenViewController.h; sourceTree = "<group>"; };
 		B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTokenViewController.m; sourceTree = "<group>"; };
 		B07A76F81D15B4A00097C1C2 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
 				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
 				B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */,
+				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
+				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
+				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
+				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
 				B0E369D31D15A9D700AD96F6 /* AppDelegate.h */,
 				B0E369D41D15A9D700AD96F6 /* AppDelegate.m */,
 				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
@@ -463,10 +473,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */,
 				B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */,
 				B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */,
 				B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */,
 				B0E369D51D15A9D700AD96F6 /* AppDelegate.m in Sources */,
+				A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */,
 				B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */,
 				B0E369D21D15A9D700AD96F6 /* main.m in Sources */,
 				B0E369DE1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld in Sources */,

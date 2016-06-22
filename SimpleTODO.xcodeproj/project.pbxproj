@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */; };
 		31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */; };
+		A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E92EAD1D1AD84600934BEA /* Main.storyboard */; };
 		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
 		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
 		B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */; };
@@ -17,7 +18,6 @@
 		B0E369D21D15A9D700AD96F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D11D15A9D700AD96F6 /* main.m */; };
 		B0E369D51D15A9D700AD96F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D41D15A9D700AD96F6 /* AppDelegate.m */; };
 		B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369D71D15A9D700AD96F6 /* ViewController.m */; };
-		B0E369DB1D15A9D700AD96F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E369D91D15A9D700AD96F6 /* Main.storyboard */; };
 		B0E369DE1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0E369DC1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld */; };
 		B0E369E01D15A9D700AD96F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */; };
 		B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */; };
@@ -48,6 +48,7 @@
 		046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2E92EAD1D1AD84600934BEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A2EAEE821D187389009ED2C5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUPViewController.h; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		B0E369D41D15A9D700AD96F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B0E369D61D15A9D700AD96F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B0E369D71D15A9D700AD96F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B0E369DA1D15A9D700AD96F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0E369DD1D15A9D700AD96F6 /* SimpleTODO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTODO.xcdatamodel; sourceTree = "<group>"; };
 		B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0E369E21D15A9D700AD96F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,6 +135,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A2E92EAF1D1B07F400934BEA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
+				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
+				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
+				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
+				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
+				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A2E92EB01D1B093F00934BEA /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
+				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
+				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
+				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
+				B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */,
+				B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		A2E92EB11D1B096400934BEA /* Core data */ = {
+			isa = PBXGroup;
+			children = (
+				B0E369DC1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld */,
+			);
+			name = "Core data";
+			sourceTree = "<group>";
+		};
 		B0E369C41D15A9D700AD96F6 = {
 			isa = PBXGroup;
 			children = (
@@ -160,21 +194,9 @@
 		B0E369CF1D15A9D700AD96F6 /* SimpleTODO */ = {
 			isa = PBXGroup;
 			children = (
-				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
-				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
-				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
-				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
-				B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */,
-				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
-				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
-				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
-				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
-				B0E369D31D15A9D700AD96F6 /* AppDelegate.h */,
-				B0E369D41D15A9D700AD96F6 /* AppDelegate.m */,
-				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
-				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
-				B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */,
-				B0E369DC1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld */,
+				A2E92EB11D1B096400934BEA /* Core data */,
+				A2E92EB01D1B093F00934BEA /* Extra */,
+				A2E92EAF1D1B07F400934BEA /* ViewController */,
 				B0E369D01D15A9D700AD96F6 /* Supporting Files */,
 			);
 			path = SimpleTODO;
@@ -183,11 +205,13 @@
 		B0E369D01D15A9D700AD96F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0E369D31D15A9D700AD96F6 /* AppDelegate.h */,
+				B0E369D41D15A9D700AD96F6 /* AppDelegate.m */,
 				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
 				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
 				B0E369E41D15A9D700AD96F6 /* Info.plist */,
 				B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */,
-				B0E369D91D15A9D700AD96F6 /* Main.storyboard */,
+				A2E92EAD1D1AD84600934BEA /* Main.storyboard */,
 				B0E369D11D15A9D700AD96F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -325,7 +349,7 @@
 				B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */,
 				B0E36A071D15ACB300AD96F6 /* GoogleService-Info.plist in Resources */,
 				B0E369E01D15A9D700AD96F6 /* Assets.xcassets in Resources */,
-				B0E369DB1D15A9D700AD96F6 /* Main.storyboard in Resources */,
+				A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,14 +541,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B0E369D91D15A9D700AD96F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0E369DA1D15A9D700AD96F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

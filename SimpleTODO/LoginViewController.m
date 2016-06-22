@@ -10,7 +10,8 @@
 #import "AppDelegate.h"
 
 @interface LoginViewController ()
-
+@property(nonatomic,strong) NSManagedObjectContext *managedobject;
+@property(nonatomic,strong) NSFetchRequest *fetch;
 @end
 
 @implementation LoginViewController
@@ -37,27 +38,54 @@
 
 - (IBAction)LoginClicked:(id)sender {
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+  // NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
     AppDelegate * appdelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-    NSManagedObjectContext * managedcontext = appdelegate.managedObjectContext;
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"LoginDetails" inManagedObjectContext:managedcontext];
-    [fetchRequest setEntity:entity];
+    _managedobject = [appdelegate managedObjectContext];
+  // NSEntityDescription *entity = [NSEntityDescription entityForName:@"LoginDetails" inManagedObjectContext:_managedobject];
+    //fetch = [NSFetchRequest fetchRequestWithEntityName:@"LoginDetails"];
+    _fetch = [[NSFetchRequest alloc] initWithEntityName:@"LoginDetails"];
+
     
     NSError *error = nil;
-    NSArray *result = [managedcontext executeFetchRequest:fetchRequest error:&error];
+    NSArray *result = [_managedobject executeFetchRequest:_fetch error:&error];
+    
     
     if (error) {
         NSLog(@"Unable to execute fetch request.");
         NSLog(@"%@, %@", error, error.localizedDescription);
         
     } else {
-        //NSLog(@"%@", result);
-        if (result.count > 0) {
-            NSManagedObject *person = (NSManagedObject *)[result objectAtIndex:0];
-            NSLog(@"1 - %@", person);
-            NSLog(@"%@ %@", [person valueForKey:@"userName"], [person valueForKey:@"password"]);
-            NSLog(@"2 - %@", person);
+        if (result == nil) {
+            abort();
         }
+        for( NSDictionary* obj in result ) {
+            NSLog(@"PersonName: %@", [obj valueForKey:@"userName"]);
+            NSLog(@"PersonPassword: %@", [obj valueForKey:@"password"]);
+            if([obj valueForKey:@"userName"] == self.emailField.text && [obj valueForKey:@"password"] == self.passwordField.text)
+            {
+                NSLog(@"Match");
+                [self performSegueWithIdentifier:@"login" sender:self];
+            }
+            else{
+                self.passwordError.hidden = NO;
+
+                self.passwordError.text = @"Password Not Matched";
+            }
+        }
+       /* NSLog(@"fetch sucess");
+      if (result.count > 0) {
+            NSManagedObject *person = (NSManagedObject *)[result objectAtIndex:0];
+            //NSLog(@"1 - %@", person);
+          NSMutableArray *names = [person valueForKey:@"userName"];
+          // NSLog(@"%@ %@", [person valueForKey:@"userName"], [person valueForKey:@"password"]);
+          
+          NSLog(@"inside if");
+           // NSLog(@"2 - %@", person);
+        }*/
     }
+}
+
+- (IBAction)signupClicked:(id)sender {
+    [self performSegueWithIdentifier:@"signup" sender:self];
 }
 @end

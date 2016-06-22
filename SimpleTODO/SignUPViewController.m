@@ -8,12 +8,14 @@
 
 #import "SignUPViewController.h"
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface SignUPViewController ()
-{
+
     //NSMutableArray * user = [[NSMutableArray alloc] NSManagedObject];
 //NSMutableArray  * users= [[NSMutableArray alloc] NSManagedObject];
-}
+ 
+@property(nonatomic,strong) NSManagedObjectContext *managedobject;
 @end
 
 @implementation SignUPViewController
@@ -53,22 +55,30 @@
 - (IBAction)submitButtonClicked:(id)sender {
     //self.savedetails(self.nameTextField.text, self.passwordTextField.text)
     [self savedetails:self.nameTextField.text :self.passwordTextField.text];
-    
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *LoginViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self.navigationController showViewController:LoginViewController sender:nil];
 }
 - (void) savedetails:(NSString *) name :(NSString *) password
 {
     AppDelegate * appdelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-    NSManagedObjectContext * managedcontext = appdelegate.managedObjectContext;
-    NSEntityDescription * entity = [NSEntityDescription entityForName:@"LoginDetails" inManagedObjectContext:managedcontext];
-    NSManagedObject *newPerson = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:managedcontext];
-    [newPerson setValue:@"username" forKey:@"userName"];
-    [newPerson setValue:@"password" forKey:@"password"];
+    _managedobject = [appdelegate managedObjectContext];
+    NSEntityDescription * entity = [NSEntityDescription entityForName:@"LoginDetails" inManagedObjectContext:_managedobject];
+    NSManagedObject *newPerson = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:_managedobject];
+    [newPerson setValue: name forKey:@"userName"];
+    [newPerson setValue: password forKey:@"password"];
     
     NSError *error = nil;
     
+    if([self.managedobject hasChanges])
+    {
     if (![newPerson.managedObjectContext save:&error]) {
         NSLog(@"Unable to save managed object context.");
         NSLog(@"%@, %@", error, error.localizedDescription);
+    }
+    else{
+        NSLog(@"save Sucess");
+    }
     }
     
     

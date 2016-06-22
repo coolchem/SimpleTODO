@@ -12,5 +12,7 @@
 @property(weak, nonatomic) IBOutlet UITextField *emailField;
 @property(weak, nonatomic) IBOutlet UITextField *passwordField;
 - (IBAction)LoginClicked:(id)sender;
+- (IBAction)signupClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *passwordError;
 
 @end

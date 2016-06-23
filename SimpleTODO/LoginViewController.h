@@ -14,5 +14,6 @@
 - (IBAction)LoginClicked:(id)sender;
 - (IBAction)signupClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *passwordError;
+@property (weak, nonatomic) IBOutlet UIButton *LoginButton;
 
 @end

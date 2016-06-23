@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */; };
 		31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */; };
+		A2E7C9171D1C301500424FEC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E7C9161D1C301500424FEC /* 1.png */; };
+		A2E7C9191D1C5C6200424FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */; };
 		A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E92EAD1D1AD84600934BEA /* Main.storyboard */; };
 		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
 		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
@@ -23,7 +25,6 @@
 		B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */; };
 		B0E369EE1D15A9D700AD96F6 /* SimpleTODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369ED1D15A9D700AD96F6 /* SimpleTODOTests.m */; };
 		B0E369F91D15A9D700AD96F6 /* SimpleTODOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E369F81D15A9D700AD96F6 /* SimpleTODOUITests.m */; };
-		B0E36A071D15ACB300AD96F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */; };
 		D55914AC5A010E4FCCC310FC /* libPods-SimpleTODOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2E7C9161D1C301500424FEC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2E92EAD1D1AD84600934BEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A2EAEE821D187389009ED2C5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -75,7 +78,6 @@
 		B0E369F41D15A9D700AD96F6 /* SimpleTODOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E369F81D15A9D700AD96F6 /* SimpleTODOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTODOUITests.m; sourceTree = "<group>"; };
 		B0E369FA1D15A9D700AD96F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1043B0B1401CE644AED2C02 /* Pods-SimpleTODOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C42B6AD48F6E6327266D7199 /* Pods-SimpleTODOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,13 +137,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A2E7C9151D1C2FF000424FEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2E7C9161D1C301500424FEC /* 1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		A2E92EAF1D1B07F400934BEA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
-				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
-				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
-				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
+				A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */,
+				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
+				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
+				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
+				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
+				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
+				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
 				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
 				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
 			);
@@ -151,12 +164,10 @@
 		A2E92EB01D1B093F00934BEA /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
-				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
-				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
-				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
-				B0E36A061D15ACB300AD96F6 /* GoogleService-Info.plist */,
-				B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */,
+				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
+				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
+				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
+				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
 			);
 			name = Extra;
 			sourceTree = "<group>";
@@ -194,6 +205,7 @@
 		B0E369CF1D15A9D700AD96F6 /* SimpleTODO */ = {
 			isa = PBXGroup;
 			children = (
+				A2E7C9151D1C2FF000424FEC /* Images */,
 				A2E92EB11D1B096400934BEA /* Core data */,
 				A2E92EB01D1B093F00934BEA /* Extra */,
 				A2E92EAF1D1B07F400934BEA /* ViewController */,
@@ -207,12 +219,11 @@
 			children = (
 				B0E369D31D15A9D700AD96F6 /* AppDelegate.h */,
 				B0E369D41D15A9D700AD96F6 /* AppDelegate.m */,
-				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
-				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
 				B0E369E41D15A9D700AD96F6 /* Info.plist */,
 				B0E369E11D15A9D700AD96F6 /* LaunchScreen.storyboard */,
 				A2E92EAD1D1AD84600934BEA /* Main.storyboard */,
 				B0E369D11D15A9D700AD96F6 /* main.m */,
+				B0E369DF1D15A9D700AD96F6 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -347,8 +358,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */,
-				B0E36A071D15ACB300AD96F6 /* GoogleService-Info.plist in Resources */,
 				B0E369E01D15A9D700AD96F6 /* Assets.xcassets in Resources */,
+				A2E7C9191D1C5C6200424FEC /* GoogleService-Info.plist in Resources */,
+				A2E7C9171D1C301500424FEC /* 1.png in Resources */,
 				A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

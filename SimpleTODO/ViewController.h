@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *todoTableView;
 @property (weak, nonatomic) IBOutlet UIButton *todoButton;
 @property (weak, nonatomic) IBOutlet UIView *tableViewView;
+- (IBAction)logOutClicked:(id)sender;
 
 @end
 

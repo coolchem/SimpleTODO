@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.png"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +38,11 @@
 */
 
 - (IBAction)LoginClicked:(id)sender {
+    
+    if(self.emailField.text && self.emailField.text.length > 0)
+    {
+     if(self.passwordField.text && self.passwordField.text.length >0)
+     {
     
   // NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
     AppDelegate * appdelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
@@ -61,7 +67,9 @@
         for( NSDictionary* obj in result ) {
             NSLog(@"PersonName: %@", [obj valueForKey:@"userName"]);
             NSLog(@"PersonPassword: %@", [obj valueForKey:@"password"]);
-            if([obj valueForKey:@"userName"] == self.emailField.text && [obj valueForKey:@"password"] == self.passwordField.text)
+            if([obj valueForKey:@"userName"] == self.emailField.text)
+            {
+                if ([obj valueForKey:@"password"] == self.passwordField.text)
             {
                 NSLog(@"Match");
                 [self performSegueWithIdentifier:@"login" sender:self];
@@ -71,6 +79,13 @@
 
                 self.passwordError.text = @"Password Not Matched";
             }
+            }
+                else
+                {
+                    self.passwordError.hidden = NO;
+                    
+                    self.passwordError.text = @"UserName Not Found";
+                }
         }
        /* NSLog(@"fetch sucess");
       if (result.count > 0) {
@@ -82,6 +97,20 @@
           NSLog(@"inside if");
            // NSLog(@"2 - %@", person);
         }*/
+    }
+     }
+        else
+        {
+            self.passwordError.hidden = NO;
+            
+            self.passwordError.text = @"Password should be entered";
+        }
+    }
+    else
+    {
+        self.passwordError.hidden = NO;
+        
+        self.passwordError.text = @"UserName should be entered";
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -59,4 +60,10 @@
 
 
 
+- (IBAction)logOutClicked:(id)sender {
+    
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *LoginViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self presentViewController: LoginViewController animated:YES completion:NULL];
+}
 @end

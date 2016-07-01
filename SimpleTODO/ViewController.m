@@ -62,8 +62,9 @@
 
 - (IBAction)logOutClicked:(id)sender {
     
-    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LoginViewController *LoginViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    [self presentViewController: LoginViewController animated:YES completion:NULL];
+   // UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   // LoginViewController *LoginViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+   // [self presentViewController: LoginViewController animated:YES completion:NULL];
+    [self performSegueWithIdentifier:@"logout" sender:self];
 }
 @end

@@ -14,6 +14,12 @@
 		A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E92EAD1D1AD84600934BEA /* Main.storyboard */; };
 		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
 		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
+		A2F3D6641D26F82100BBD744 /* TodoOnlineLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */; };
+		A2F3D66B1D27058100BBD744 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6651D27058100BBD744 /* Icon-App-29x29@2x.png */; };
+		A2F3D66C1D27058100BBD744 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6661D27058100BBD744 /* Icon-App-29x29@3x.png */; };
+		A2F3D66D1D27058100BBD744 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6671D27058100BBD744 /* Icon-App-40x40@2x.png */; };
+		A2F3D66E1D27058100BBD744 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6681D27058100BBD744 /* Icon-App-40x40@3x.png */; };
+		A2F3D6701D27058100BBD744 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D66A1D27058100BBD744 /* Icon-App-60x60@3x.png */; };
 		B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */; };
 		B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76F91D15B4A00097C1C2 /* EmailViewController.m */; };
 		B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */; };
@@ -56,6 +62,12 @@
 		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUPViewController.h; sourceTree = "<group>"; };
 		A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUPViewController.m; sourceTree = "<group>"; };
+		A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TodoOnlineLogo.png; sourceTree = "<group>"; };
+		A2F3D6651D27058100BBD744 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		A2F3D6661D27058100BBD744 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		A2F3D6671D27058100BBD744 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		A2F3D6681D27058100BBD744 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		A2F3D66A1D27058100BBD744 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
 		B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTokenViewController.h; sourceTree = "<group>"; };
 		B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTokenViewController.m; sourceTree = "<group>"; };
 		B07A76F81D15B4A00097C1C2 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
@@ -140,7 +152,13 @@
 		A2E7C9151D1C2FF000424FEC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */,
 				A2E7C9161D1C301500424FEC /* 1.png */,
+				A2F3D6651D27058100BBD744 /* Icon-App-29x29@2x.png */,
+				A2F3D6661D27058100BBD744 /* Icon-App-29x29@3x.png */,
+				A2F3D6671D27058100BBD744 /* Icon-App-40x40@2x.png */,
+				A2F3D6681D27058100BBD744 /* Icon-App-40x40@3x.png */,
+				A2F3D66A1D27058100BBD744 /* Icon-App-60x60@3x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -321,6 +339,7 @@
 				TargetAttributes = {
 					B0E369CC1D15A9D700AD96F6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 998UMSH588;
 					};
 					B0E369E81D15A9D700AD96F6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -358,8 +377,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */,
+				A2F3D66B1D27058100BBD744 /* Icon-App-29x29@2x.png in Resources */,
+				A2F3D6701D27058100BBD744 /* Icon-App-60x60@3x.png in Resources */,
+				A2F3D6641D26F82100BBD744 /* TodoOnlineLogo.png in Resources */,
 				B0E369E01D15A9D700AD96F6 /* Assets.xcassets in Resources */,
 				A2E7C9191D1C5C6200424FEC /* GoogleService-Info.plist in Resources */,
+				A2F3D66E1D27058100BBD744 /* Icon-App-40x40@3x.png in Resources */,
+				A2F3D66C1D27058100BBD744 /* Icon-App-29x29@3x.png in Resources */,
+				A2F3D66D1D27058100BBD744 /* Icon-App-40x40@2x.png in Resources */,
 				A2E7C9171D1C301500424FEC /* 1.png in Resources */,
 				A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */,
 			);
@@ -653,6 +678,7 @@
 			baseConfigurationReference = F957C2A38493F0F8250A5A72 /* Pods-SimpleTODO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;
@@ -665,6 +691,7 @@
 			baseConfigurationReference = D8B00E75B2D660BA7F79C4EA /* Pods-SimpleTODO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;

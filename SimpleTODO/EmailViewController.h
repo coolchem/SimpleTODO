@@ -17,5 +17,6 @@
 #import <UIKit/UIKit.h>
 
 @interface EmailViewController : UIViewController
+- (IBAction)backgroundClicked:(id)sender;
 
 @end

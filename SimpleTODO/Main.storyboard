@@ -275,9 +275,17 @@
                                 <exclude reference="Arh-TW-PvY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4IE-g7-mH7"/>
+                                <exclude reference="yxK-do-Rez"/>
                                 <exclude reference="9aQ-9l-NDK"/>
                                 <exclude reference="Vts-Mb-FhU"/>
                                 <exclude reference="rZS-fm-yu1"/>
+                                <exclude reference="47N-c3-BIU"/>
+                                <exclude reference="55c-hc-n5o"/>
+                                <exclude reference="dsD-9q-lfV"/>
+                                <exclude reference="0zO-AI-pt2"/>
+                                <exclude reference="ELm-UZ-7lw"/>
+                                <exclude reference="r84-oT-kjQ"/>
                                 <exclude reference="RnO-LJ-9e5"/>
                                 <exclude reference="TL9-Ms-jaW"/>
                                 <exclude reference="cbo-lU-hs2"/>
@@ -285,14 +293,6 @@
                                 <exclude reference="dOe-0a-Qrw"/>
                                 <exclude reference="e7v-9J-StI"/>
                                 <exclude reference="ymg-er-aPy"/>
-                                <exclude reference="0zO-AI-pt2"/>
-                                <exclude reference="ELm-UZ-7lw"/>
-                                <exclude reference="r84-oT-kjQ"/>
-                                <exclude reference="4IE-g7-mH7"/>
-                                <exclude reference="yxK-do-Rez"/>
-                                <exclude reference="47N-c3-BIU"/>
-                                <exclude reference="55c-hc-n5o"/>
-                                <exclude reference="dsD-9q-lfV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -303,9 +303,17 @@
                                 <include reference="Arh-TW-PvY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4IE-g7-mH7"/>
+                                <include reference="yxK-do-Rez"/>
                                 <include reference="9aQ-9l-NDK"/>
                                 <include reference="Vts-Mb-FhU"/>
                                 <include reference="rZS-fm-yu1"/>
+                                <exclude reference="47N-c3-BIU"/>
+                                <include reference="55c-hc-n5o"/>
+                                <exclude reference="dsD-9q-lfV"/>
+                                <include reference="0zO-AI-pt2"/>
+                                <include reference="ELm-UZ-7lw"/>
+                                <include reference="r84-oT-kjQ"/>
                                 <include reference="RnO-LJ-9e5"/>
                                 <include reference="TL9-Ms-jaW"/>
                                 <exclude reference="cbo-lU-hs2"/>
@@ -313,14 +321,6 @@
                                 <exclude reference="dOe-0a-Qrw"/>
                                 <exclude reference="e7v-9J-StI"/>
                                 <include reference="ymg-er-aPy"/>
-                                <include reference="0zO-AI-pt2"/>
-                                <include reference="ELm-UZ-7lw"/>
-                                <include reference="r84-oT-kjQ"/>
-                                <include reference="4IE-g7-mH7"/>
-                                <include reference="yxK-do-Rez"/>
-                                <exclude reference="47N-c3-BIU"/>
-                                <include reference="55c-hc-n5o"/>
-                                <exclude reference="dsD-9q-lfV"/>
                             </mask>
                         </variation>
                     </view>
@@ -331,6 +331,7 @@
                         <outlet property="todoButton" destination="FsF-vh-9Sv" id="RmZ-RK-x08"/>
                         <outlet property="todoTableView" destination="qtR-K2-a8H" id="YNR-OD-YuA"/>
                         <outlet property="todoText" destination="ejB-D7-JDY" id="gwo-Sg-yif"/>
+                        <segue destination="Ztr-CP-a73" kind="show" identifier="logout" id="ZW5-Re-aR2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -447,12 +448,12 @@
                                 <exclude reference="hWw-tZ-Y40"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="28t-6r-9dy"/>
                                 <exclude reference="p6k-kd-gN8"/>
                                 <exclude reference="s31-ge-1Wl"/>
                                 <exclude reference="Im0-kB-eMh"/>
                                 <exclude reference="b7R-UJ-Csc"/>
                                 <exclude reference="eCM-gD-FHp"/>
-                                <exclude reference="28t-6r-9dy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -462,12 +463,12 @@
                                 <include reference="hWw-tZ-Y40"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="28t-6r-9dy"/>
                                 <include reference="p6k-kd-gN8"/>
                                 <include reference="s31-ge-1Wl"/>
                                 <include reference="Im0-kB-eMh"/>
                                 <include reference="b7R-UJ-Csc"/>
                                 <include reference="eCM-gD-FHp"/>
-                                <include reference="28t-6r-9dy"/>
                             </mask>
                         </variation>
                     </view>
@@ -490,18 +491,24 @@
                         <viewControllerLayoutGuide type="top" id="DwF-fH-Jem"/>
                         <viewControllerLayoutGuide type="bottom" id="miK-3i-Oa0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Au3-Li-xEq">
+                    <view key="view" contentMode="scaleToFill" id="Au3-Li-xEq" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" background="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wb7-Yk-vAg">
                                 <rect key="frame" x="197" y="137" width="207" height="30"/>
+                                <color key="backgroundColor" red="0.40151461170000002" green="0.5837613747" blue="0.65895904039999997" alpha="0.63976293103448278" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OSp-br-W7S"/>
                                     <constraint firstAttribute="width" constant="207" id="xJk-kN-wFE"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="OSp-br-W7S"/>
@@ -516,11 +523,13 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="backgroundClicked:" destination="Ztr-CP-a73" eventType="editingDidEndOnExit" id="LVd-vM-Ffc"/>
                                     <outlet property="delegate" destination="Ztr-CP-a73" id="dOt-OF-Q79"/>
                                 </connections>
                             </textField>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-QO-z9m">
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-QO-z9m">
                                 <rect key="frame" x="197" y="188" width="207" height="30"/>
+                                <color key="backgroundColor" red="0.40151461170000002" green="0.5837613747" blue="0.65895904039999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Password"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="Pha-rm-t3n"/>
@@ -528,6 +537,18 @@
                                 </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Pha-rm-t3n"/>
@@ -542,12 +563,13 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="backgroundClicked:" destination="Ztr-CP-a73" eventType="editingDidEndOnExit" id="Ven-2E-7nS"/>
                                     <outlet property="delegate" destination="Ztr-CP-a73" id="Tbx-tM-0tg"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwZ-WB-lOo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.74772679805755615" green="0.91792029142379761" blue="0.93960398435592651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74772679805755615" green="0.91792029142379761" blue="0.93960398435592651" alpha="0.67120150862068961" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="91q-g5-YDZ"/>
                                     <constraint firstAttribute="height" constant="30" id="hXB-Mi-EbJ"/>
@@ -666,7 +688,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.40151461166438607" green="0.58376137474451484" blue="0.65895904037435904" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.53333333329999999" blue="0.59607843140000005" alpha="0.86988146551724133" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pRN-F0-4xI" firstAttribute="leading" secondItem="HyT-TU-KUG" secondAttribute="trailing" constant="2" id="1kj-z6-KKC"/>
                             <constraint firstItem="AwZ-WB-lOo" firstAttribute="top" secondItem="CQz-QO-z9m" secondAttribute="bottom" constant="46" id="2yW-uU-BSw"/>
@@ -695,6 +717,13 @@
                                 <exclude reference="4Tr-ER-gD9"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="jY7-sE-Rty"/>
+                                <exclude reference="sn8-lA-Wu5"/>
+                                <exclude reference="2yW-uU-BSw"/>
+                                <exclude reference="YLJ-We-d7Z"/>
+                                <exclude reference="1kj-z6-KKC"/>
+                                <exclude reference="NL4-rz-GuG"/>
+                                <exclude reference="bVZ-Fb-aLd"/>
                                 <exclude reference="QCc-Cv-vxN"/>
                                 <exclude reference="TMK-XH-Hj0"/>
                                 <exclude reference="i4u-Nf-ODG"/>
@@ -704,14 +733,7 @@
                                 <exclude reference="nrR-GV-tvZ"/>
                                 <exclude reference="rWV-mb-ByF"/>
                                 <exclude reference="D3a-Ly-YmZ"/>
-                                <exclude reference="2yW-uU-BSw"/>
-                                <exclude reference="YLJ-We-d7Z"/>
-                                <exclude reference="jY7-sE-Rty"/>
-                                <exclude reference="sn8-lA-Wu5"/>
                                 <exclude reference="XAU-Vh-U1r"/>
-                                <exclude reference="1kj-z6-KKC"/>
-                                <exclude reference="NL4-rz-GuG"/>
-                                <exclude reference="bVZ-Fb-aLd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -723,6 +745,13 @@
                                 <include reference="4Tr-ER-gD9"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="jY7-sE-Rty"/>
+                                <include reference="sn8-lA-Wu5"/>
+                                <include reference="2yW-uU-BSw"/>
+                                <include reference="YLJ-We-d7Z"/>
+                                <include reference="1kj-z6-KKC"/>
+                                <include reference="NL4-rz-GuG"/>
+                                <include reference="bVZ-Fb-aLd"/>
                                 <include reference="QCc-Cv-vxN"/>
                                 <include reference="TMK-XH-Hj0"/>
                                 <include reference="i4u-Nf-ODG"/>
@@ -732,16 +761,12 @@
                                 <include reference="nrR-GV-tvZ"/>
                                 <include reference="rWV-mb-ByF"/>
                                 <include reference="D3a-Ly-YmZ"/>
-                                <include reference="2yW-uU-BSw"/>
-                                <include reference="YLJ-We-d7Z"/>
-                                <include reference="jY7-sE-Rty"/>
-                                <include reference="sn8-lA-Wu5"/>
                                 <include reference="XAU-Vh-U1r"/>
-                                <include reference="1kj-z6-KKC"/>
-                                <include reference="NL4-rz-GuG"/>
-                                <include reference="bVZ-Fb-aLd"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <action selector="backgroundClicked:" destination="Ztr-CP-a73" eventType="touchUpInside" id="83G-at-gPP"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="Wb7-Yk-vAg" id="0B4-sv-p2X"/>
@@ -758,4 +783,7 @@
     <resources>
         <image name="1.png" width="182" height="182"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZW5-Re-aR2"/>
+    </inferredMetricsTieBreakers>
 </document>

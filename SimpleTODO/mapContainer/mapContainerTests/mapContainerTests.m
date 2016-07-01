@@ -1,19 +1,18 @@
 //
-//  SimpleTODOTests.m
-//  SimpleTODOTests
+//  mapContainerTests.m
+//  mapContainerTests
 //
-//  Created by Varun Reddy Nalagatla on 6/18/16.
-//  Copyright © 2016 Varun Reddy Nalagatla. All rights reserved.
+//  Created by Sai anuja reddy Kadi Reddy on 6/27/16.
+//  Copyright © 2016 Sai anuja reddy Kasi Reddy. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "EmailViewController.h"
 
-@interface SimpleTODOTests : XCTestCase
+@interface mapContainerTests : XCTestCase
 
 @end
 
-@implementation SimpleTODOTests
+@implementation mapContainerTests
 
 - (void)setUp {
     [super setUp];
@@ -25,10 +24,9 @@
     [super tearDown];
 }
 
-- (void) loginTest {
+- (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
 }
 
 - (void)testPerformanceExample {

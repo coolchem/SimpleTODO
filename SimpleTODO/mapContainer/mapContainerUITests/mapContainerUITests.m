@@ -1,19 +1,18 @@
 //
-//  SimpleTODOUITests.m
-//  SimpleTODOUITests
+//  mapContainerUITests.m
+//  mapContainerUITests
 //
-//  Created by Varun Reddy Nalagatla on 6/18/16.
-//  Copyright © 2016 Varun Reddy Nalagatla. All rights reserved.
+//  Created by Sai anuja reddy Kadi Reddy on 6/27/16.
+//  Copyright © 2016 Sai anuja reddy Kasi Reddy. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "EmailViewController.h"
 
-@interface SimpleTODOUITests : XCTestCase
+@interface mapContainerUITests : XCTestCase
 
 @end
 
-@implementation SimpleTODOUITests
+@implementation mapContainerUITests
 
 - (void)setUp {
     [super setUp];
@@ -33,27 +32,9 @@
     [super tearDown];
 }
 
-- (void)testLogin {
+- (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
-    
-    XCUIApplication *app = [[XCUIApplication alloc] init];
-    [app.textFields[@"Username"] tap];
-   [app.textFields[@"Username"]typeText:@"anu.ruchi92@gmail.com"];
-   // [app.textFields set:@"anu.ruchi92@gmail.com"];
-    
-    XCUIElement *passwordSecureTextField = app.secureTextFields[@"Password"];
-    [passwordSecureTextField tap];
-    //[passwordSecureTextField tap];
-    [app.secureTextFields[@"Password"]typeText:@"anuja12345"];
-    //app.secureTextFields[@"Password"]
-    [app.buttons[@"Return"] tap];
-    //[app typeText:@"\n"];
-    [app.buttons[@"LOGIN"] tap];
-    [app.buttons[@"LogOut"] tap];
-    
-    
 }
 
 @end

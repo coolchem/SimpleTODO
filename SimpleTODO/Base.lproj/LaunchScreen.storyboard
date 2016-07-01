@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TodoOnlineLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mio-Jo-SzJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mio-Jo-SzJ" secondAttribute="trailing" id="CTg-kv-XsM"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mio-Jo-SzJ" secondAttribute="bottom" id="CY9-Uk-Oef"/>
+                            <constraint firstItem="mio-Jo-SzJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Gm2-n3-be3"/>
+                            <constraint firstItem="mio-Jo-SzJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="OGW-vP-0d9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mio-Jo-SzJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CTg-kv-XsM"/>
+                                <exclude reference="Gm2-n3-be3"/>
+                                <exclude reference="OGW-vP-0d9"/>
+                                <exclude reference="CY9-Uk-Oef"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mio-Jo-SzJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CTg-kv-XsM"/>
+                                <include reference="Gm2-n3-be3"/>
+                                <include reference="OGW-vP-0d9"/>
+                                <include reference="CY9-Uk-Oef"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TodoOnlineLogo.png" width="765" height="338"/>
+    </resources>
 </document>

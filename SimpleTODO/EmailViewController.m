@@ -34,6 +34,17 @@
   [self.view endEditing:YES];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+   // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.png"]];
+    //self.emailField.layer.borderColor= UIColor(
+    
+}
+
+
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO to ignore.
 {
     if(self.nameTextField.text != nil && self.passwordTextField.text != nil)
@@ -216,4 +227,10 @@ password:_passwordTextField.text
 }];*/
      }
 
+- (IBAction)backgroundClicked:(id)sender {
+    [self.nameTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    [self.emailField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+}
 @end

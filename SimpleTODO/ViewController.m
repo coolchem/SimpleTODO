@@ -33,7 +33,7 @@
     self.tableViewView.hidden = NO;
     self.todoTableView.hidden = NO;
     self.todoButton.hidden = NO;
-     Firebase *myRootRef = [[Firebase alloc] referenceFromURL:@"https://todoslogin-24559.firebaseio.com/"];
+     //Firebase *myRootRef = [[Firebase alloc] referenceFromURL:@"https://todoslogin-24559.firebaseio.com/"];
     // Write data to Firebaser
    // [myRootRef setValue:<#(nullable id)#> forKey:<#(nonnull NSString *)#>];
     return YES;

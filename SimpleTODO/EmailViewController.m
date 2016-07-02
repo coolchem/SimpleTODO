@@ -37,8 +37,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.png"]];
-    //self.emailField.layer.borderColor= UIColor(
+    self.emailField.layer.cornerRadius = 8.0f;
+    self.emailField.layer.masksToBounds = YES;
+    self.emailField.layer.borderColor = [[UIColor cyanColor]CGColor];
+    self.emailField.layer.borderWidth = 1.0f;
+    
+    self.passwordField.layer.cornerRadius = 8.0f;
+    self.passwordField.layer.masksToBounds = YES;
+    self.passwordField.layer.borderColor = [[UIColor cyanColor]CGColor];
+    self.passwordField.layer.borderWidth = 1.0f;
+    
+    self.passwordTextField.layer.cornerRadius = 8.0f;
+    self.passwordTextField.layer.masksToBounds = YES;
+    self.passwordTextField.layer.borderColor = [[UIColor cyanColor]CGColor];
+    self.passwordTextField.layer.borderWidth = 1.0f;
+   
+    self.nameTextField.layer.cornerRadius = 8.0f;
+    self.nameTextField.layer.masksToBounds = YES;
+    self.nameTextField.layer.borderColor = [[UIColor cyanColor]CGColor];
+    self.nameTextField.layer.borderWidth = 1.0f;
     
 }
 
@@ -47,15 +64,18 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO to ignore.
 {
-    if(self.nameTextField.text != nil && self.passwordTextField.text != nil)
-    {
-        self.submitButton.enabled = YES;
-    }
+    //if(self.nameTextField.text != nil && self.passwordTextField.text != nil)
+    //{
+        //self.submitButton.enabled = YES;
+   // }
     [self.nameTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
     [self.emailField resignFirstResponder];
     [self.passwordField resignFirstResponder];
     return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
 }
 
 - (IBAction)loginClicked:(id)sender {
@@ -171,6 +191,19 @@
                                             if (!userPressedOK || !password.length) {
                                               return;
                                             }*/
+    if(self.nameTextField.text.length != 0)
+    {
+        if(self.passwordTextField.text.length == 0)
+        {
+            [self showMessagePrompt:@"Password Field Empty"];
+
+        }
+    }
+    else
+    {
+     [self showMessagePrompt:@"Username Field Empty"];
+    }
+    
     if(self.passwordTextField.text.length >= 6)
     {
 
@@ -232,5 +265,9 @@ password:_passwordTextField.text
     [self.passwordTextField resignFirstResponder];
     [self.emailField resignFirstResponder];
     [self.passwordField resignFirstResponder];
+}
+
+- (IBAction)backToLoginClicked:(id)sender {
+    [self performSegueWithIdentifier:@"login" sender:self];
 }
 @end

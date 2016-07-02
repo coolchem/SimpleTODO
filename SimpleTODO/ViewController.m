@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "LoginViewController.h"
-
+//#import <Firebase/Analytics/Firebase.h>
+//@import FirebaseDatabase;
+//@import FirebaseAuth;
 @interface ViewController ()
 
 @end
@@ -17,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //test comment
-    //test_test
-    //test_anuja_3
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -34,6 +33,9 @@
     self.tableViewView.hidden = NO;
     self.todoTableView.hidden = NO;
     self.todoButton.hidden = NO;
+     Firebase *myRootRef = [[Firebase alloc] referenceFromURL:@"https://todoslogin-24559.firebaseio.com/"];
+    // Write data to Firebaser
+   // [myRootRef setValue:<#(nullable id)#> forKey:<#(nonnull NSString *)#>];
     return YES;
 }
 

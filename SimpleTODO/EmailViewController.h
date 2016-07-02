@@ -15,8 +15,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface EmailViewController : UIViewController
 - (IBAction)backgroundClicked:(id)sender;
+- (IBAction)backToLoginClicked:(id)sender;
 
 @end

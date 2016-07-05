@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FirebaseAnalytics/FirebaseAnalytics.h>
+#import <Firebase/Firebase.h>
 
 
 @interface ViewController : UIViewController

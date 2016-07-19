@@ -16,9 +16,18 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import<Canvas.h>
 
 @interface EmailViewController : UIViewController
+{
+    BOOL State;
+    __weak IBOutlet UITextField *emailfield;
+    __weak IBOutlet UITextField *passwordfield;
+}
 - (IBAction)backgroundClicked:(id)sender;
 - (IBAction)backToLoginClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *checkedBox;
+- (IBAction)checkedBoxClicked:(id)sender;
+@property (strong, nonatomic) IBOutlet UIControl *mainview;
 
 @end

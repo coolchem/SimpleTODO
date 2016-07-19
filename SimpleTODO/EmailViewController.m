@@ -16,16 +16,23 @@
 
 #import "EmailViewController.h"
 #import "UIViewController+Alerts.h"
+#import "ViewController.h"
 
 
 @import FirebaseAuth;
 
 @interface EmailViewController ()
+{
+    NSUserDefaults * nsDef;
+    NSString *presentState;
+}
+
 @property(weak, nonatomic) IBOutlet UITextField *emailField;
 @property(weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
+
 @end
 
 @implementation EmailViewController
@@ -57,9 +64,52 @@
     self.nameTextField.layer.borderColor = [[UIColor cyanColor]CGColor];
     self.nameTextField.layer.borderWidth = 1.0f;
     
+    State = NO;
+    /*nsDef = [NSUserDefaults standardUserDefaults];
+    presentState = [nsDef stringForKey:@"myState"];
+    NSLog(presentState);*/
+    
+   /* if([presentState isEqualToString:@"YES"])
+    {
+        //NSUserDefaults * nsDef = [NSUserDefaults standardUserDefaults];
+        NSString *user = [nsDef stringForKey:@"myUser"];
+        NSString *userPass = [nsDef stringForKey:@"myPass"];
+        emailfield.text = user;
+        passwordfield.text = userPass;
+    }*/
+
+    
 }
 
-
+- (void)viewWillAppear:(BOOL)animated {
+    if([presentState isEqualToString:@"YES"])
+    {
+    //NSUserDefaults * nsDef = [NSUserDefaults standardUserDefaults];
+    NSString *user = [nsDef stringForKey:@"myUser"];
+    NSString *userPass = [nsDef stringForKey:@"myPass"];
+    emailfield.text = user;
+    passwordfield.text = userPass;
+    }
+    
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    if([presentState isEqualToString:@"YES"])
+    {
+    NSString * userName = emailfield.text;
+    NSString * Password = passwordfield.text;
+    [[NSUserDefaults standardUserDefaults] setObject: userName forKey:@"myUser"];
+    [[NSUserDefaults standardUserDefaults] setObject: Password forKey:@"myPass"];
+    }
+}
+-(BOOL)shouldAutorotate
+{
+    return NO;
+}
+-(NSUInteger)supportedInterfaceOriantations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField              // called when 'return' key pressed. return NO to ignore.
@@ -78,12 +128,10 @@
 {
 }
 
-- (IBAction)loginClicked:(id)sender {
-    
-}
-
 - (IBAction)didTapEmailLogin:(id)sender {
-  [self showSpinner:^{
+    
+    //[self.mainview startCanvasAnimation];
+    [self showSpinner:^{
     // [START headless_email_auth]
     [[FIRAuth auth] signInWithEmail:_emailField.text
                            password:_passwordField.text
@@ -95,7 +143,13 @@
                                return;
                              }
                              //[self.navigationController popViewControllerAnimated:YES];
+                               [UIView beginAnimations:@"flipview" context:nil];
+                               [UIView setAnimationDuration:2];
+                               [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+                               [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.mainview cache:YES];
+                               //[self.view addSubview:self.mainview.view];
                                [self performSegueWithIdentifier:@"login" sender:self];
+                               [UIView commitAnimations];
                            }];
                            // [END_EXCLUDE]
                          }];
@@ -269,5 +323,24 @@ password:_passwordTextField.text
 
 - (IBAction)backToLoginClicked:(id)sender {
     [self performSegueWithIdentifier:@"login" sender:self];
+}
+- (IBAction)checkedBoxClicked:(id)sender {
+    
+    if(!State)
+    {
+        [self.checkedBox setImage:[UIImage imageNamed:@"Checkbox_checked.png"] forState:UIControlStateNormal];
+        State = YES;
+        //presentState = @"YES";
+        //NS* state = State;
+        [[NSUserDefaults standardUserDefaults] setObject: @"Yes" forKey:@"myState"];
+        
+    }
+    else
+    {
+        [self.checkedBox setImage:[UIImage imageNamed:@"Checkbox_not_checked.png"] forState:UIControlStateNormal];
+        [[NSUserDefaults standardUserDefaults] setObject: @"NO" forKey:@"myState"];
+        State = NO;
+    }
+    
 }
 @end

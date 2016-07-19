@@ -14,9 +14,12 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *todoText;
 @property (weak, nonatomic) IBOutlet UITableView *todoTableView;
-@property (weak, nonatomic) IBOutlet UIButton *todoButton;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
 @property (weak, nonatomic) IBOutlet UIView *tableViewView;
 - (IBAction)logOutClicked:(id)sender;
+- (IBAction)addButtonClicked:(id)sender;
+- (IBAction)checkButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lable;
 
 @end
 

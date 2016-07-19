@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EmailViewController.h"
 
 @interface AppDelegate ()
 
@@ -45,6 +46,19 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+     EmailViewController *EmailViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"SignUp"];
+    if ([shortcutItem.type isEqualToString:@"Add"])
+    {
+       
+        //[EmailViewController presentationController];
+       // [presentViewController:EmailViewController animated:YES completion:NULL];
+        [self.window.rootViewController presentViewController: EmailViewController animated:YES completion:NULL];
+    }
 }
 
 #pragma mark - Core Data stack

@@ -11,6 +11,7 @@ target 'SimpleTODO' do
       pod 'Firebase/Auth'
       #pod ‘Firebase/core’
       pod 'Firebase/Database'
+      pod’Canvas’
 
   target 'SimpleTODOTests' do
     inherit! :search_paths

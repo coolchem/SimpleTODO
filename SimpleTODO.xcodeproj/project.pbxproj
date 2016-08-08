@@ -9,9 +9,20 @@
 /* Begin PBXBuildFile section */
 		1AFB86AC13A07719A9A9DFC6 /* libPods-SimpleTODOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */; };
 		31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */; };
+		A202ED281D59160B005D2E78 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A202ED271D59160B005D2E78 /* PhotoCollectionViewController.swift */; };
+		A276A3F21D49081E00CFB731 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A276A3F11D49081E00CFB731 /* sidemenu.png */; };
+		A276A3FA1D49187700CFB731 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A276A3F91D49187700CFB731 /* SWRevealViewController.m */; };
+		A276A4001D49680600CFB731 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276A3FF1D49680600CFB731 /* PhotoViewController.swift */; };
+		A2B6E80D1D4131280055BB05 /* LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B6E80C1D4131280055BB05 /* LoginTests.m */; };
+		A2B6E8101D42E4680055BB05 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */; };
 		A2E7C9171D1C301500424FEC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E7C9161D1C301500424FEC /* 1.png */; };
 		A2E7C9191D1C5C6200424FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */; };
 		A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E92EAD1D1AD84600934BEA /* Main.storyboard */; };
+		A2E976551D47A6B60011CE04 /* share icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E976541D47A6B60011CE04 /* share icon.png */; };
+		A2EA2A9E1D4A4AD7008A2A4E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2A9D1D4A4AD7008A2A4E /* MenuViewController.m */; };
+		A2EA2AA01D4AA214008A2A4E /* FullPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2A9F1D4AA214008A2A4E /* FullPhotoViewController.swift */; };
+		A2EA2AA21D4AAD4E008A2A4E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EA2AA11D4AAD4E008A2A4E /* Photos.framework */; };
+		A2EA2AA41D4ABED1008A2A4E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */; };
 		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
 		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
 		A2F38F321D314558009B2241 /* Checkbox_not_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F38F311D314558009B2241 /* Checkbox_not_checked.png */; };
@@ -57,9 +68,24 @@
 		046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTODO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563E9608B472C30F52846865 /* Pods-SimpleTODOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOTests/Pods-SimpleTODOTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTODOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTODOUITests/Pods-SimpleTODOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A202ED271D59160B005D2E78 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		A276A3F11D49081E00CFB731 /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
+		A276A3F81D49186000CFB731 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A276A3F91D49187700CFB731 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A276A3FE1D49680600CFB731 /* SimpleTODO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTODO-Bridging-Header.h"; sourceTree = "<group>"; };
+		A276A3FF1D49680600CFB731 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A2B6E80C1D4131280055BB05 /* LoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTests.m; sourceTree = "<group>"; };
+		A2B6E80E1D42E4680055BB05 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		A2E7C9161D1C301500424FEC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2E92EAD1D1AD84600934BEA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2E976541D47A6B60011CE04 /* share icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share icon.png"; sourceTree = "<group>"; };
+		A2EA2A9C1D4A4AD7008A2A4E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		A2EA2A9D1D4A4AD7008A2A4E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		A2EA2A9F1D4AA214008A2A4E /* FullPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPhotoViewController.swift; sourceTree = "<group>"; };
+		A2EA2AA11D4AAD4E008A2A4E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2EAEE821D187389009ED2C5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUPViewController.h; sourceTree = "<group>"; };
@@ -107,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EA2AA21D4AAD4E008A2A4E /* Photos.framework in Frameworks */,
 				31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +160,7 @@
 		6642326E6DBB8EF594894E79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2EA2AA11D4AAD4E008A2A4E /* Photos.framework */,
 				046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */,
 				B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */,
 				F02554FCC159DE931B3D6E30 /* libPods-SimpleTODOUITests.a */,
@@ -156,6 +184,8 @@
 		A2E7C9151D1C2FF000424FEC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A276A3F11D49081E00CFB731 /* sidemenu.png */,
+				A2E976541D47A6B60011CE04 /* share icon.png */,
 				A2F38F311D314558009B2241 /* Checkbox_not_checked.png */,
 				A2F38F331D314562009B2241 /* checkbox_checked.png */,
 				A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */,
@@ -172,6 +202,8 @@
 		A2E92EAF1D1B07F400934BEA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A276A3F81D49186000CFB731 /* SWRevealViewController.h */,
+				A276A3F91D49187700CFB731 /* SWRevealViewController.m */,
 				A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */,
 				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
 				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
@@ -181,6 +213,14 @@
 				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
 				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
 				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
+				A2EA2A9C1D4A4AD7008A2A4E /* MenuViewController.h */,
+				A2EA2A9D1D4A4AD7008A2A4E /* MenuViewController.m */,
+				A2B6E80E1D42E4680055BB05 /* DetailsViewController.h */,
+				A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */,
+				A202ED271D59160B005D2E78 /* PhotoCollectionViewController.swift */,
+				A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */,
+				A2EA2A9F1D4AA214008A2A4E /* FullPhotoViewController.swift */,
+				A276A3FE1D49680600CFB731 /* SimpleTODO-Bridging-Header.h */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +228,7 @@
 		A2E92EB01D1B093F00934BEA /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				A276A3FF1D49680600CFB731 /* PhotoViewController.swift */,
 				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
 				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
 				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
@@ -257,6 +298,7 @@
 			children = (
 				B0E369ED1D15A9D700AD96F6 /* SimpleTODOTests.m */,
 				B0E369EF1D15A9D700AD96F6 /* Info.plist */,
+				A2B6E80C1D4131280055BB05 /* LoginTests.m */,
 			);
 			path = SimpleTODOTests;
 			sourceTree = "<group>";
@@ -383,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E369E31D15A9D700AD96F6 /* LaunchScreen.storyboard in Resources */,
+				A2E976551D47A6B60011CE04 /* share icon.png in Resources */,
 				A2F3D66B1D27058100BBD744 /* Icon-App-29x29@2x.png in Resources */,
 				A2F3D6701D27058100BBD744 /* Icon-App-60x60@3x.png in Resources */,
 				A2F38F341D314562009B2241 /* checkbox_checked.png in Resources */,
@@ -394,6 +437,7 @@
 				A2F38F321D314558009B2241 /* Checkbox_not_checked.png in Resources */,
 				A2F3D66D1D27058100BBD744 /* Icon-App-40x40@2x.png in Resources */,
 				A2E7C9171D1C301500424FEC /* 1.png in Resources */,
+				A276A3F21D49081E00CFB731 /* sidemenu.png in Resources */,
 				A2E92EAE1D1AD84600934BEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,14 +586,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A202ED281D59160B005D2E78 /* PhotoCollectionViewController.swift in Sources */,
 				A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */,
+				A2B6E8101D42E4680055BB05 /* DetailsViewController.m in Sources */,
 				B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */,
 				B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */,
+				A2EA2A9E1D4A4AD7008A2A4E /* MenuViewController.m in Sources */,
 				B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */,
+				A276A4001D49680600CFB731 /* PhotoViewController.swift in Sources */,
 				B0E369D51D15A9D700AD96F6 /* AppDelegate.m in Sources */,
 				A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */,
 				B07A76FB1D15B4A00097C1C2 /* EmailViewController.m in Sources */,
+				A276A3FA1D49187700CFB731 /* SWRevealViewController.m in Sources */,
+				A2EA2AA41D4ABED1008A2A4E /* PhotoCollectionViewCell.swift in Sources */,
 				B0E369D21D15A9D700AD96F6 /* main.m in Sources */,
+				A2EA2AA01D4AA214008A2A4E /* FullPhotoViewController.swift in Sources */,
 				B0E369DE1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0E369EE1D15A9D700AD96F6 /* SimpleTODOTests.m in Sources */,
+				A2B6E80D1D4131280055BB05 /* LoginTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +690,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -676,6 +729,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -686,12 +740,16 @@
 			baseConfigurationReference = F957C2A38493F0F8250A5A72 /* Pods-SimpleTODO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -700,12 +758,15 @@
 			baseConfigurationReference = D8B00E75B2D660BA7F79C4EA /* Pods-SimpleTODO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -11,15 +11,17 @@
 
 
 @interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITextField *todoText;
+@property (weak, nonatomic) IBOutlet UITextView *todoText;
 @property (weak, nonatomic) IBOutlet UITableView *todoTableView;
+//- (IBAction)LogoutClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
 @property (weak, nonatomic) IBOutlet UIView *tableViewView;
-- (IBAction)logOutClicked:(id)sender;
+//- (IBAction)logOutClicked:(id)sender;
 - (IBAction)addButtonClicked:(id)sender;
-- (IBAction)checkButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 @property (weak, nonatomic) IBOutlet UILabel *lable;
+//@property (strong, nonatomic) IBOutlet UITextView *todoList;
+//@property (nonatomic, readonly) NSInteger row;
 
 @end
 

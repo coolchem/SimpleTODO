@@ -20,6 +20,7 @@
 
 
 @import FirebaseAuth;
+@import LocalAuthentication;
 
 @interface EmailViewController ()
 {
@@ -148,7 +149,7 @@
                                [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
                                [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.mainview cache:YES];
                                //[self.view addSubview:self.mainview.view];
-                               [self performSegueWithIdentifier:@"login" sender:self];
+                               [self performSegueWithIdentifier:@"toMainview" sender:self];
                                [UIView commitAnimations];
                            }];
                            // [END_EXCLUDE]
@@ -282,7 +283,7 @@
                                                                //  UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                                                                 // LoginViewController *LoginViewController = [mystoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
                                                                 // [self presentViewController:  animated:YES completion:NULL];
-                                                                [self performSegueWithIdentifier:@"login" sender:self];
+                                                                [self performSegueWithIdentifier:@"toMainview" sender:self];
                                                              }];
                                                              // [END_EXCLUDE]
                                                            }];
@@ -291,27 +292,7 @@
     else{
         [self showMessagePrompt:@"Password Length should be greater than 6"];
     }
-                                         // }];
-                    // }];
-   /* [[FIRAuth auth]
-createUserWithEmail:_nameTextField.text
-password:_passwordTextField.text
-     completion: ^(FIRUser * user,
-                   NSError * error){
-   // user, error;
-    
-   if (error !=nil) {
-       
-       NSLog(@"error");
-   }
-       
-   
-    else{
-        
-        NSLog(@"created");
-    }
-    
-}];*/
+
      }
 
 - (IBAction)backgroundClicked:(id)sender {
@@ -343,4 +324,29 @@ password:_passwordTextField.text
     }
     
 }
+- (IBAction)touchedIDClicked:(id)sender {
+    
+    [self touchidcall];
+}
+-(void)touchidcall
+{
+    LAContext *authContext = [[LAContext alloc]init];
+    NSError *error;
+    if([authContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error])
+    {
+        [authContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"todo touch" reply:^(BOOL wasSucessful,NSError *error){
+            
+            if(wasSucessful)
+            {
+                [self performSegueWithIdentifier:@"toMainview" sender:self];
+            }
+            
+            
+        }];
+    
+    
+    }
+    
+}
+
 @end

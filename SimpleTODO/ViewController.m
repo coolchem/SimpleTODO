@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.m
 //  SimpleTODO
 //
@@ -9,24 +9,16 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 #import "UIViewController+Alerts.h"
+#import "DetailsViewController.h"
+#import "SWRevealViewController.h"
 
 @interface ViewController ()
 {
-    FIRDatabaseReference *userRef;
-    NSString *databaseData;
-   UITableViewCell *cell;
-    NSDictionary *todo;
-    //NSEnumerator *denu;
-   //int i;
-        NSString *dictkey;
-    NSString *dictkey1;
-    //NSString *deleteKey;
-
-    NSDictionary *dictvalue;
-    //FIRDataSnapshot *snapshot;
-    
-    
-    
+    FIRDatabaseReference *userRef,*Ref;
+    UITableViewCell *cell;
+    NSDictionary *todo,*dictvalue;
+    NSString *i,*dictkey1,*dictkey,*databaseData,*editkey;
+    NSString *status;
 }
 @property (nonatomic, strong) NSMutableArray *data;
 @end
@@ -35,6 +27,12 @@
 
 - (void)viewDidLoad {
     // Do any additional setup after loading the view, typically from a nib.
+    
+        [self.barButton setTarget: self.revealViewController];
+        [self.barButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    
     [super viewDidLoad];
     //setting textfield boder
     self.todoText.layer.cornerRadius = 8.0f;
@@ -47,8 +45,11 @@
     NSString *uid = [FIRAuth auth].currentUser.uid;
     
     userRef = [userRef child:uid];
-
+    userRef = [userRef child:@"todos"];
+    //self.todoList.text = i;
     [self loadDataFromFirebase];
+    
+    
     
 }
 
@@ -122,9 +123,29 @@ for (FIRDataSnapshot* child in snapshot.children)
     
     cell.textLabel.text =[self.data objectAtIndex: indexPath.row];
     
+    
+    //[self performSegueWithIdentifier:@"fullTodo" sender:self];
+    
     return cell;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *deletekey;
+   i = [self.data objectAtIndex:indexPath.row];
+    deletekey = [[NSArray alloc] initWithObjects:[dictvalue allKeysForObject:i], nil];
+    //NSLog(@"deletekey%@",deletekey);
+    editkey= [[deletekey objectAtIndex: 0]componentsJoinedByString:@""];
+    NSString *str = [NSString stringWithFormat: @"%@%@%@", userRef, @"/", editkey];
+    Ref = [[FIRDatabase database] referenceFromURL:str];
+
+    
+  //  i = [i appendString:[NSString stringWithFormat:"%@", [self.data objectAtIndex:indexPath.row]]];
+    status = @"edit";
+    [self performSegueWithIdentifier:@"fullTodo" sender:self];
+    
+}
 
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
@@ -140,7 +161,7 @@ for (FIRDataSnapshot* child in snapshot.children)
        
        NSUInteger index = indexPath.row;
        NSString * deleteValue = [self.data objectAtIndex: indexPath.row];
-       // NSLog(@"deletevalue:%@",deleteValue);
+      // NSLog(@"deletevalue:%@",deleteValue);
        NSArray *deletekey;
        //Remove data from the array
        [_data removeObjectAtIndex:index];
@@ -158,38 +179,38 @@ for (FIRDataSnapshot* child in snapshot.children)
      
     }
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[DetailsViewController class]])
+    {
+       
+        DetailsViewController *controller = segue.destinationViewController;
+       // NSLog(@"the string:%@",i);
+        controller.detailText = i;
+        controller.status = status;
+        if([status isEqualToString:@"edit"])
+        {
+            controller.ref = Ref;
+            controller.editkey = editkey;
+        }
+    }
+    
+}
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
 }
 
 
-- (IBAction)logOutClicked:(id)sender {
+- (IBAction)addButtonClicked:(id)sender {
+ 
+    status = @"add";
+    [self performSegueWithIdentifier:@"fullTodo" sender:self];
+}
+
+/*- (IBAction)LogoutClicked:(id)sender {
     
     [self performSegueWithIdentifier:@"logout" sender:self];
-}
-
-- (IBAction)addButtonClicked:(id)sender {
-    
-    if([self.todoText.text isEqualToString:@""])
-    {
-     [self showMessagePrompt:@"Enter some todo"];   
-    }
-    else{
-    //self.todoTableView.hidden = NO;
-         NSString *key = [userRef childByAutoId].key;
-  
-    todo = @{
-             key:self.todoText.text
-            };
-
-    [userRef updateChildValues: todo];
-    
-    
-    [self loadDataFromFirebase];
-    
-}
-}
-- (IBAction)checkButtonClicked:(id)sender {
-}
+}*/
 @end

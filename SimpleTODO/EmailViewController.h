@@ -30,4 +30,6 @@
 - (IBAction)checkedBoxClicked:(id)sender;
 @property (strong, nonatomic) IBOutlet UIControl *mainview;
 
+- (IBAction)touchedIDClicked:(id)sender;
+
 @end

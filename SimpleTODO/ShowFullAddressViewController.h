@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UITextView *addressTextView;
 @property (weak, nonatomic) NSString *Latitude;
 @property (weak, nonatomic) NSString *Longitude;
+- (IBAction)getDirectionsClicked:(id)sender;
 @end

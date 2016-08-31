@@ -87,6 +87,24 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+   // NSIndexPath *indexPath = [self.MyTableView indexPathForCell:sender];
+    /*NSIndexPath* indexPath = [NSIndexPath indexPathForRow:selectedIndex inSection:0];
+     UITableViewCell *cell = [self.MyTableView cellForRowAtIndexPath:indexPath];
+     NSIndexPath *indexPath = [self.MyTableView indexPathForSelectedRow];*/
+    
+    NSArray *location;
+    
+    i = [self.data objectAtIndex:indexPath.row];
+    location = [[NSArray alloc] initWithObjects:[dictvalue valueForKey:i],nil];
+    Latitude = [[location valueForKey:@"Latitude"]componentsJoinedByString:@""];
+    longitude = [[location valueForKey:@"Longitude"] componentsJoinedByString:@""];
+    [self performSegueWithIdentifier:@"showpopover" sender:self];
+    
+
+}
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
@@ -136,7 +154,8 @@
 }
 
 - (IBAction)showDirectionsClicked:(id)sender {
-    NSIndexPath *indexPath = [self.MyTableView indexPathForCell:sender];
+   // NSIndexPath *indexPath = [self.MyTableView indexPathForCell:sender];
+    NSIndexPath *indexPath = [self.MyTableView indexPathForSelectedRow];
     
     NSArray *location;
     
@@ -145,9 +164,7 @@
     Latitude = [[location valueForKey:@"Latitude"]componentsJoinedByString:@""];
     longitude = [[location valueForKey:@"Longitude"] componentsJoinedByString:@""];
     
-    NSString *urlstring = [NSString stringWithFormat: @"%@%@%@%@", @"http://maps.apple.com/maps?daddr=",Latitude,@",",longitude];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlstring]];
-    
+        
     
 }
 
@@ -157,21 +174,8 @@
     {
         
         ShowFullAddressViewController *controller = segue.destinationViewController;
-       
-        NSIndexPath *indexPath = [self.MyTableView indexPathForCell:sender];
-        
-        NSArray *location;
-        
-        i = [self.data objectAtIndex:indexPath.row];
-        location = [[NSArray alloc] initWithObjects:[dictvalue valueForKey:i],nil];
-        
-        
         self.modalPresentationStyle = UIModalPresentationPopover;
         controller.popoverPresentationController.delegate = self;
-        Latitude = [[location valueForKey:@"Latitude"]componentsJoinedByString:@""];
-        longitude = [[location valueForKey:@"Longitude"] componentsJoinedByString:@""];
-
-    
         controller.Latitude = Latitude;
         controller.Longitude = longitude;
         

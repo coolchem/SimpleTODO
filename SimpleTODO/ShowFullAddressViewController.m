@@ -86,4 +86,10 @@
 }
 */
 
+- (IBAction)getDirectionsClicked:(id)sender {
+    
+    NSString *urlstring = [NSString stringWithFormat: @"%@%@%@%@", @"http://maps.apple.com/maps?daddr=",self.Latitude,@",",self.Longitude];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlstring]];
+
+}
 @end

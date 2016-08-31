@@ -13,6 +13,9 @@
 		A276A3F21D49081E00CFB731 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = A276A3F11D49081E00CFB731 /* sidemenu.png */; };
 		A276A3FA1D49187700CFB731 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A276A3F91D49187700CFB731 /* SWRevealViewController.m */; };
 		A276A4001D49680600CFB731 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276A3FF1D49680600CFB731 /* PhotoViewController.swift */; };
+		A292B8EF1D724F1000DF4CF7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A292B8EE1D724F1000DF4CF7 /* MapViewController.m */; };
+		A292B8F11D725D6B00DF4CF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A292B8F01D725D6B00DF4CF7 /* CoreLocation.framework */; };
+		A292B8F31D725F3700DF4CF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A292B8F21D725F3700DF4CF7 /* MapKit.framework */; };
 		A2B6E80D1D4131280055BB05 /* LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B6E80C1D4131280055BB05 /* LoginTests.m */; };
 		A2B6E8101D42E4680055BB05 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */; };
 		A2E7C9171D1C301500424FEC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E7C9161D1C301500424FEC /* 1.png */; };
@@ -25,6 +28,8 @@
 		A2EA2AA41D4ABED1008A2A4E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */; };
 		A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE831D187389009ED2C5 /* LoginViewController.m */; };
 		A2EAEE871D1888B4009ED2C5 /* SignUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */; };
+		A2EC3F6A1D7468FF00E57C6D /* ShowAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC3F691D7468FF00E57C6D /* ShowAddressViewController.m */; };
+		A2EC3F6D1D74E06A00E57C6D /* ShowFullAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC3F6C1D74E06A00E57C6D /* ShowFullAddressViewController.m */; };
 		A2F38F321D314558009B2241 /* Checkbox_not_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F38F311D314558009B2241 /* Checkbox_not_checked.png */; };
 		A2F38F341D314562009B2241 /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F38F331D314562009B2241 /* checkbox_checked.png */; };
 		A2F3D6641D26F82100BBD744 /* TodoOnlineLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */; };
@@ -74,6 +79,10 @@
 		A276A3F91D49187700CFB731 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A276A3FE1D49680600CFB731 /* SimpleTODO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTODO-Bridging-Header.h"; sourceTree = "<group>"; };
 		A276A3FF1D49680600CFB731 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A292B8ED1D724F1000DF4CF7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A292B8EE1D724F1000DF4CF7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A292B8F01D725D6B00DF4CF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A292B8F21D725F3700DF4CF7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A2B6E80C1D4131280055BB05 /* LoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTests.m; sourceTree = "<group>"; };
 		A2B6E80E1D42E4680055BB05 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
@@ -90,6 +99,10 @@
 		A2EAEE831D187389009ED2C5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUPViewController.h; sourceTree = "<group>"; };
 		A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUPViewController.m; sourceTree = "<group>"; };
+		A2EC3F681D7468FF00E57C6D /* ShowAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAddressViewController.h; sourceTree = "<group>"; };
+		A2EC3F691D7468FF00E57C6D /* ShowAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAddressViewController.m; sourceTree = "<group>"; };
+		A2EC3F6B1D74E06A00E57C6D /* ShowFullAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowFullAddressViewController.h; sourceTree = "<group>"; };
+		A2EC3F6C1D74E06A00E57C6D /* ShowFullAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowFullAddressViewController.m; sourceTree = "<group>"; };
 		A2F38F311D314558009B2241 /* Checkbox_not_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkbox_not_checked.png; sourceTree = "<group>"; };
 		A2F38F331D314562009B2241 /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
 		A2F3D6631D26F82100BBD744 /* TodoOnlineLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TodoOnlineLogo.png; sourceTree = "<group>"; };
@@ -133,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A292B8F31D725F3700DF4CF7 /* MapKit.framework in Frameworks */,
+				A292B8F11D725D6B00DF4CF7 /* CoreLocation.framework in Frameworks */,
 				A2EA2AA21D4AAD4E008A2A4E /* Photos.framework in Frameworks */,
 				31843F805AA9B7DCE6E015A9 /* libPods-SimpleTODO.a in Frameworks */,
 			);
@@ -160,6 +175,8 @@
 		6642326E6DBB8EF594894E79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A292B8F21D725F3700DF4CF7 /* MapKit.framework */,
+				A292B8F01D725D6B00DF4CF7 /* CoreLocation.framework */,
 				A2EA2AA11D4AAD4E008A2A4E /* Photos.framework */,
 				046BE8533F00A5E730E5793E /* libPods-SimpleTODO.a */,
 				B52701E30AB2063553565D96 /* libPods-SimpleTODOTests.a */,
@@ -179,6 +196,68 @@
 				8D1A962D3B3F093BD928D7E2 /* Pods-SimpleTODOUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A292B8E71D724DC700DF4CF7 /* main viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
+				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
+				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
+				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
+				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
+				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
+				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
+				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
+			);
+			name = "main viewControllers";
+			sourceTree = "<group>";
+		};
+		A292B8E81D724DF500DF4CF7 /* Todo ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
+				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
+				A2B6E80E1D42E4680055BB05 /* DetailsViewController.h */,
+				A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */,
+			);
+			name = "Todo ViewControllers";
+			sourceTree = "<group>";
+		};
+		A292B8E91D724E0E00DF4CF7 /* Side menu ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A276A3F81D49186000CFB731 /* SWRevealViewController.h */,
+				A276A3F91D49187700CFB731 /* SWRevealViewController.m */,
+				A2EA2A9C1D4A4AD7008A2A4E /* MenuViewController.h */,
+				A2EA2A9D1D4A4AD7008A2A4E /* MenuViewController.m */,
+			);
+			name = "Side menu ViewController";
+			sourceTree = "<group>";
+		};
+		A292B8EA1D724E3200DF4CF7 /* Photo ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A202ED271D59160B005D2E78 /* PhotoCollectionViewController.swift */,
+				A276A3FF1D49680600CFB731 /* PhotoViewController.swift */,
+				A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */,
+				A2EA2A9F1D4AA214008A2A4E /* FullPhotoViewController.swift */,
+				A276A3FE1D49680600CFB731 /* SimpleTODO-Bridging-Header.h */,
+			);
+			name = "Photo ViewController";
+			sourceTree = "<group>";
+		};
+		A292B8EC1D724EDE00DF4CF7 /* Map ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A292B8ED1D724F1000DF4CF7 /* MapViewController.h */,
+				A292B8EE1D724F1000DF4CF7 /* MapViewController.m */,
+				A2EC3F681D7468FF00E57C6D /* ShowAddressViewController.h */,
+				A2EC3F691D7468FF00E57C6D /* ShowAddressViewController.m */,
+				A2EC3F6B1D74E06A00E57C6D /* ShowFullAddressViewController.h */,
+				A2EC3F6C1D74E06A00E57C6D /* ShowFullAddressViewController.m */,
+			);
+			name = "Map ViewController";
 			sourceTree = "<group>";
 		};
 		A2E7C9151D1C2FF000424FEC /* Images */ = {
@@ -202,25 +281,12 @@
 		A2E92EAF1D1B07F400934BEA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A276A3F81D49186000CFB731 /* SWRevealViewController.h */,
-				A276A3F91D49187700CFB731 /* SWRevealViewController.m */,
+				A292B8EC1D724EDE00DF4CF7 /* Map ViewController */,
 				A2E7C9181D1C5C6200424FEC /* GoogleService-Info.plist */,
-				B07A76FC1D15B55E0097C1C2 /* UIViewController+Alerts.h */,
-				B07A76FD1D15B55E0097C1C2 /* UIViewController+Alerts.m */,
-				B07A76F61D15B4A00097C1C2 /* CustomTokenViewController.h */,
-				B07A76F71D15B4A00097C1C2 /* CustomTokenViewController.m */,
-				B07A76F81D15B4A00097C1C2 /* EmailViewController.h */,
-				B07A76F91D15B4A00097C1C2 /* EmailViewController.m */,
-				B0E369D61D15A9D700AD96F6 /* ViewController.h */,
-				B0E369D71D15A9D700AD96F6 /* ViewController.m */,
-				A2EA2A9C1D4A4AD7008A2A4E /* MenuViewController.h */,
-				A2EA2A9D1D4A4AD7008A2A4E /* MenuViewController.m */,
-				A2B6E80E1D42E4680055BB05 /* DetailsViewController.h */,
-				A2B6E80F1D42E4680055BB05 /* DetailsViewController.m */,
-				A202ED271D59160B005D2E78 /* PhotoCollectionViewController.swift */,
-				A2EA2AA31D4ABED1008A2A4E /* PhotoCollectionViewCell.swift */,
-				A2EA2A9F1D4AA214008A2A4E /* FullPhotoViewController.swift */,
-				A276A3FE1D49680600CFB731 /* SimpleTODO-Bridging-Header.h */,
+				A292B8E91D724E0E00DF4CF7 /* Side menu ViewController */,
+				A292B8E71D724DC700DF4CF7 /* main viewControllers */,
+				A292B8E81D724DF500DF4CF7 /* Todo ViewControllers */,
+				A292B8EA1D724E3200DF4CF7 /* Photo ViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -228,11 +294,9 @@
 		A2E92EB01D1B093F00934BEA /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				A276A3FF1D49680600CFB731 /* PhotoViewController.swift */,
 				A2EAEE821D187389009ED2C5 /* LoginViewController.h */,
 				A2EAEE831D187389009ED2C5 /* LoginViewController.m */,
-				A2EAEE851D1888B4009ED2C5 /* SignUPViewController.h */,
-				A2EAEE861D1888B4009ED2C5 /* SignUPViewController.m */,
+				A2E92EAF1D1B07F400934BEA /* ViewController */,
 			);
 			name = Extra;
 			sourceTree = "<group>";
@@ -273,7 +337,6 @@
 				A2E7C9151D1C2FF000424FEC /* Images */,
 				A2E92EB11D1B096400934BEA /* Core data */,
 				A2E92EB01D1B093F00934BEA /* Extra */,
-				A2E92EAF1D1B07F400934BEA /* ViewController */,
 				B0E369D01D15A9D700AD96F6 /* Supporting Files */,
 			);
 			path = SimpleTODO;
@@ -590,6 +653,7 @@
 				A2EAEE841D187389009ED2C5 /* LoginViewController.m in Sources */,
 				A2B6E8101D42E4680055BB05 /* DetailsViewController.m in Sources */,
 				B07A76FA1D15B4A00097C1C2 /* CustomTokenViewController.m in Sources */,
+				A2EC3F6D1D74E06A00E57C6D /* ShowFullAddressViewController.m in Sources */,
 				B07A76FE1D15B55E0097C1C2 /* UIViewController+Alerts.m in Sources */,
 				A2EA2A9E1D4A4AD7008A2A4E /* MenuViewController.m in Sources */,
 				B0E369D81D15A9D700AD96F6 /* ViewController.m in Sources */,
@@ -600,7 +664,9 @@
 				A276A3FA1D49187700CFB731 /* SWRevealViewController.m in Sources */,
 				A2EA2AA41D4ABED1008A2A4E /* PhotoCollectionViewCell.swift in Sources */,
 				B0E369D21D15A9D700AD96F6 /* main.m in Sources */,
+				A2EC3F6A1D7468FF00E57C6D /* ShowAddressViewController.m in Sources */,
 				A2EA2AA01D4AA214008A2A4E /* FullPhotoViewController.swift in Sources */,
+				A292B8EF1D724F1000DF4CF7 /* MapViewController.m in Sources */,
 				B0E369DE1D15A9D700AD96F6 /* SimpleTODO.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,12 +810,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -762,11 +829,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SimpleTODO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coolchem.SimpleTODO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTODO/SimpleTODO-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

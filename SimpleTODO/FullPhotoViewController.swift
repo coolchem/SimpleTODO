@@ -20,7 +20,7 @@ class FullPhotoViewController: UIViewController {
     var deletekey: String = String()
     
     override func viewDidLoad() {
-        userRef = FIRDatabase.database().referenceFromURL("https://todoslogin-24559.firebaseio.com/")
+        userRef = FIRDatabase.database().reference(fromURL: "https://todoslogin-24559.firebaseio.com/")
         uid = FIRAuth.auth()!.currentUser!.uid
         userRef = userRef.child(uid)
         userRef = userRef.child("image")
@@ -36,13 +36,13 @@ class FullPhotoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.hidesBarsOnTap = true
         imageView.image = image
 
             }
     
-    @IBAction func deleteClicked(sender: AnyObject) {
+    @IBAction func deleteClicked(_ sender: AnyObject) {
         
       /* var data: NSData = NSData()
         
@@ -63,20 +63,20 @@ class FullPhotoViewController: UIViewController {
             deletekey = self.fullvalues.allKeysForObject(base64String)
             let arrayvalue = deletekey.objectAtIndex(0) as! String*/
             let str = "https://todoslogin-24559.firebaseio.com/" + uid + "/" + "image/" + deletekey
-            let userRef1 = FIRDatabase.database().referenceFromURL(str)
+            let userRef1 = FIRDatabase.database().reference(fromURL: str)
             userRef1.removeValue()
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            self.navigationController?.popToRootViewController(animated: true)
            /* break
             }
         }*/
         
     }
 
-    @IBAction func cancelClicked(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func cancelClicked(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
-    @IBAction func shareClicked(sender: AnyObject) {
+    @IBAction func shareClicked(_ sender: AnyObject) {
     }
     /*
     // MARK: - Navigation

@@ -14,7 +14,7 @@ import Firebase
 class PhotoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
-    func setImage(image: UIImage) -> Void {
+    func setImage(_ image: UIImage) -> Void {
     
        // let name = nameTextField.text
         

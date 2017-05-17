@@ -35,7 +35,7 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
         PhotoBarButton.target = self.revealViewController()
         PhotoBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer());
-        userRef = FIRDatabase.database().referenceFromURL("https://todoslogin-24559.firebaseio.com/")
+        userRef = FIRDatabase.database().reference(fromURL: "https://todoslogin-24559.firebaseio.com/")
         uid = FIRAuth.auth()!.currentUser!.uid
         userRef = userRef.child(uid)
         userRef = userRef.child("image")
@@ -43,7 +43,7 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
         
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.loadDataFromFirebase()
         
         
@@ -53,7 +53,7 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
         
         //UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         self.collectionView.reloadData()
-        userRef.observeEventType(.Value, withBlock: { snapshot in
+        userRef.observe(.value, with: { snapshot in
             //var tempItems = [NSDictionary]()
             
             if (self.selectedimage.count == 0 || self.encodedimages.count == 0){
@@ -70,14 +70,14 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
                 let child = item as! FIRDataSnapshot
                 let dictkey = child.key
                 self.dictvalue = snapshot.value as! NSDictionary
-                let str = self.dictvalue.valueForKey(dictkey) as! String
-                self.encodedimages.addObject(str)
+                let str = self.dictvalue.value(forKey: dictkey) as! String
+                self.encodedimages.add(str)
                 var decodedData:NSData = NSData()
-                decodedData = NSData(base64EncodedString: str , options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)!
+                decodedData = NSData(base64Encoded: str , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)!
                 
-                let decodedimage = UIImage(data: decodedData)!
+                let decodedimage = UIImage(data: decodedData as Data)!
                 
-                self.selectedimage.addObject(decodedimage)
+                self.selectedimage.add(decodedimage)
             }
             
             
@@ -91,42 +91,42 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cameraClicked(sender: AnyObject) {
+    @IBAction func cameraClicked(_ sender: AnyObject) {
         
-        if (UIImagePickerController.isSourceTypeAvailable(.Camera))
+        if (UIImagePickerController.isSourceTypeAvailable(.camera))
         {
             //load camera
             let picker: UIImagePickerController = UIImagePickerController()
-            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.sourceType = UIImagePickerControllerSourceType.camera
             picker.delegate = self
             picker.allowsEditing = false
-            self.presentViewController(picker, animated: true, completion: nil)
+            self.present(picker, animated: true, completion: nil)
             
         }else{
             //no camera available
-            let alert = UIAlertController(title: "ERROR", message: "No Camera Available", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(alertAction)in
+            let alert = UIAlertController(title: "ERROR", message: "No Camera Available", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(alertAction)in
                 
-                alert.dismissViewControllerAnimated(true, completion: nil)
+                alert.dismiss(animated: true, completion: nil)
                 
             }))
         }
     }
     
-    @IBAction func folderClicked(sender: AnyObject) {
+    @IBAction func folderClicked(_ sender: AnyObject) {
         
         let picker: UIImagePickerController = UIImagePickerController()
-        picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         picker.delegate = self
         picker.allowsEditing = true
-        self.presentViewController(picker, animated: true, completion: nil)
+        self.present(picker, animated: true, completion: nil)
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier!  as String == "photoSegue")
         {
-            let fullPhoto: FullPhotoViewController = segue.destinationViewController as! FullPhotoViewController
+            let fullPhoto: FullPhotoViewController = segue.destination as! FullPhotoViewController
             fullPhoto.image = self.fullimage
             fullPhoto.deletekey = self.arrayvalue
             
@@ -136,13 +136,13 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
     // CollectionView DelegateMethods
     
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        fullimage = self.selectedimage.objectAtIndex(indexPath.row) as! UIImage
+        fullimage = self.selectedimage.object(at: indexPath.row) as! UIImage
         var deletekey:NSArray = NSArray()
-        let i = self.encodedimages.objectAtIndex(indexPath.row)
-        deletekey = self.dictvalue.allKeysForObject(i)
-        arrayvalue = deletekey.objectAtIndex(0) as! String
+        let i = self.encodedimages.object(at: indexPath.row)
+        deletekey = self.dictvalue.allKeys(for: i) as NSArray
+        arrayvalue = deletekey.object(at: 0) as! String
         
         /* NSArray *deletekey;
          i = [self.data objectAtIndex:indexPath.row];
@@ -150,26 +150,26 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
          //NSLog(@"deletekey%@",deletekey);
          editkey= [[deletekey objectAtIndex: 0]componentsJoinedByString:@""];*/
         
-        performSegueWithIdentifier("photoSegue", sender: self)
+        performSegue(withIdentifier: "photoSegue", sender: self)
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     @available(iOS 6.0, *)
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return self.selectedimage.count;
     }
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     @available(iOS 6.0, *)
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         
-        let Cell: PhotoCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("photoCell", forIndexPath: indexPath) as! PhotoCollectionViewCell
+        let Cell: PhotoCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCollectionViewCell
         
-        let image = self.selectedimage.objectAtIndex(indexPath.row) as! UIImage
+        let image = self.selectedimage.object(at: indexPath.row) as! UIImage
         //Cell.backgroundColor = UIColor .redColor()
         Cell.setImage(image);
         return Cell;
@@ -180,29 +180,29 @@ class PhotoViewControllerCollectionViewController: UIViewController, UICollectio
     
     
     @available(iOS 2.0, *)
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        self.dismiss(animated: true, completion: nil)
         // selectedimage.addObject(image)
         
         
-        key1 = userRef.childByAutoId().key
+        key1 = userRef.childByAutoId().key as NSString
         
-        var data: NSData = NSData()
+        var data: Data = Data()
         
         // if let image = photoImageView.image {
         data = UIImageJPEGRepresentation(image,0.1)!
         // }
         
-        let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+        let base64String = data.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
         let user: NSDictionary = [key1:base64String]
-        userRef.updateChildValues(user as [NSObject : AnyObject])
+        userRef.updateChildValues(user as! [AnyHashable: Any])
     }
     
     
     @available(iOS 2.0, *)
-    func imagePickerControllerDidCancel(picker: UIImagePickerController)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
     {
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
     }
     
     
